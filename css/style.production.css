@@ -1,0 +1,483 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+body { 
+    font-family: 'Inconsolata', sans-serif;
+    font-weight: 700;
+      font-size: 18px;
+      line-height: 1.0;
+      background-color: #ffffff;
+      color: #000000;
+  }
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+/*-----------------------------------*/
+a {
+  color: #000000
+}
+/*-----------------------------------*/
+a:visited {
+  /* visited link primary link color*/
+  color: #14213d;
+}
+a:hover, a:focus {
+  /* No underlining when hovering over a link */
+  text-decoration: none;
+}
+  a:active {
+  /* selected link */
+  color: #489c79;
+}
+/*-----------------------------------*/
+
+input, texture, select, button {
+  font-family: system-ui;
+}
+button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+  background-color: #001d3d;
+  color: #000000;
+  text-decoration: none;
+  /*adds spacing to the button (this will be discussed more in-depth later) */
+  padding: 10px;
+  border-radius: 9px;
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+ /*-----------------------------------*/
+
+button:hover, button:focus {
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  /* reduces the opacity of the button to 80% */
+  opacity: 0.8;
+}
+/*-----------------------------------*/
+
+.button__secondary {
+  background-color: #403d39;
+  color: #E3E3E3;
+}
+a {/*elemtn selector*/
+color: #14213d;
+}
+
+#my-link {/*id selector*/
+color: #14213d;
+}
+
+.my-link {/*class selector*/
+color: blue;
+}
+
+div {
+padding: 10px; /* adds a 10px inner spacing to all sides */
+margin: 10px; /* adds a 10px outer spacing to all sides */ 
+border: 0px solid #000000; /*attributes describe: thiness, type, color */
+}
+
+.header_title {
+/* spacing to top and bottom and auto-spacing to left and right, which cneters the container horizontally */
+margin: 0 auto;
+}
+
+.profile__portrait {
+float: left;
+margin-right: 40px;
+width: 150px;
+height: auto;
+border-radius: 50%;
+}
+
+.new-york-img {
+width:0 auto;
+height: 500px;
+float:inline-start;
+margin-right: 40px;
+
+}
+.table {
+padding: 10px;
+margin: 10px;
+border: 1px solid black;
+}
+.page-footer {
+clear: both;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+text-align: center;
+padding: 15px;
+}
+.profile {
+max-width: 700px;
+margin: 0 auto;
+}
+* {
+-webkit-box-sizing: border-box;
+        box-sizing: border-box;
+}
+
+
+.profile__text {
+-webkit-box-flex: 1;
+    -ms-flex: 1 1 100px;
+        flex: 1 1 100px;
+}
+
+.page-header {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+width: 100%;
+padding: 20px;
+}
+
+.page-header__item {
+-webkit-box-flex: 0;
+    -ms-flex: 0 1 200px;
+        flex: 0 1 200px;
+}
+
+.page-header__item:last-child {
+-webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+        flex-grow: 1;
+text-align: right;
+}
+
+.navigation-list {
+list-style-type: none;
+}
+
+.navigation-list li {
+display: inline-block;
+margin-left: 15px;
+}
+
+.navigation-list__item--active {
+text-decoration: none;
+}
+
+/* start grid fallback */
+.grid__item {
+display: inline-block;
+width: 33%;
+}
+/* end grid fallback */
+
+@supports (display:grid) {
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  margin: 0;
+}
+
+.grid__item {
+  background-color: lightgray;
+  width: auto;
+  min-height: auto;
+  margin: 0;
+  border-radius: 5px;
+}
+
+.grid__item:last-child {
+  -ms-grid-column: 3;
+  grid-column: 3/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
+}
+
+}
+@media all and (max-width: 500px) {
+.grid {
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+}
+}
+@media all and (min-width: 500px) and (max-width: 750px){
+.grid {
+  -ms-grid-columns: 1fr 20px 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+}
+@media all and (max-width: 750px) {
+.grid {
+  grid-gap: 10px;
+}
+.grid__item:last-child {
+  grid-column: auto / auto;
+  grid-row: auto / auto;
+}
+h1 {
+  font-size: 22px;
+}
+}
+
+
+
+
+/*
+button, 
+.button1, 
+.button2, 
+.button3,
+.my-input {
+
+}
+button, 
+.button {
+your styling goes here 
+}
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+/* your styling goes here */  
+
+
+.button {
+/* overwrites browser defaults and resets the border */
+border: none;
+display: inline-block;
+/* takes the font from outer container */
+font-family: inherit;
+/* styles the button */
+background-color: #001d3d;
+color: #FFFFFF;
+text-decoration: none;
+padding: 10px;
+border-radius: 3px;
+/* width of the border, type, color */
+border-bottom: 2px solid rgba (0, 0, 0, 0.3);
+-webkit-transition: 0.2s opacity;
+-o-transition: 0.2s opacity;
+transition: 0.2s opacity;
+}  
+
+
+button {
+/* overwrites browser defaults and resets the border */
+border: none;
+display: inline-block;
+/* takes the font from outer container */
+font-family: inherit;
+/* styles the button */
+background-color: #001d3d;
+color: #FFFFFF;
+text-decoration: none;
+padding: 10px;
+border-radius: 3px;
+/* width of the border, type, color */
+border-bottom: 2px solid rgba (0, 0, 0, 0.3);
+-webkit-transition: 0.2s opacity;
+-o-transition: 0.2s opacity;
+transition: 0.2s opacity;
+}
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+/* lets the mouse appear as a hand when hovering over the button */  
+cursor: pointer;
+/* reduces the oapcity of the button to 80% */
+opacity: 0.8
+
+}
+
+.about-all {
+max-width: 700px;
+margin: 0 auto;
+}
+.NY {
+max-width: 700px;
+margin: 0 auto;
+}
+.table {
+max-width: 900px;
+margin: 0 auto;
+
+}
+.button {  
+max-width: 700px;
+margin: 0 auto;
+}
+
+@-webkit-keyframes color-change {
+0% {
+  fill: #04151C;
+}
+50% {
+  fill: #B8D7E9;
+}
+100% {
+  fill: #f76414;
+}
+}
+
+@keyframes color-change {
+0% {
+  fill: #04151C;
+}
+50% {
+  fill: #B8D7E9;
+}
+100% {
+  fill: #f76414;
+}
+}
+.sun {
+-webkit-animation: 4s color-change infinite alternate linear;
+        animation: 4s color-change infinite alternate linear;
+}
+.sky {
+-webkit-animation: 4s color-change infinite alternate linear;
+        animation: 4s color-change infinite alternate linear;
+}
+
+@-webkit-keyframes cloud-move {
+from {
+  -webkit-transform: translate(0px, 50px);
+          transform: translate(0px, 50px);
+}
+to {
+  -webkit-transform: translate(100px, 50px);
+          transform: translate(100px, 50px);
+}
+}
+
+@keyframes cloud-move {
+from {
+  -webkit-transform: translate(0px, 50px);
+          transform: translate(0px, 50px);
+}
+to {
+  -webkit-transform: translate(100px, 50px);
+          transform: translate(100px, 50px);
+}
+}
+.cloud-front {
+-webkit-animation: 30s cloud-move infinite alternate linear;
+        animation: 30s cloud-move infinite alternate linear;
+}
+.cloud2 {
+-webkit-animation: 10s cloud-move infinite alternate linear;
+        animation: 10s cloud-move infinite alternate linear;
+}
+
+@-webkit-keyframes cloud-move-reverse {
+from {
+  -webkit-transform: (446px, 48px);
+          transform: (446px, 48px)
+}
+to {
+  -webkit-transform: translate(100px, 48px);
+          transform: translate(100px, 48px);
+}
+}
+
+@keyframes cloud-move-reverse {
+from {
+  -webkit-transform: (446px, 48px);
+          transform: (446px, 48px)
+}
+to {
+  -webkit-transform: translate(100px, 48px);
+          transform: translate(100px, 48px);
+}
+}
+.cloud-back {
+-webkit-animation: 49s cloud-move-reverse infinite alternate linear;
+        animation: 49s cloud-move-reverse infinite alternate linear;
+}
+.cloud {
+-webkit-animation: 10s cloud-move-reverse infinite alternate linear;
+        animation: 10s cloud-move-reverse infinite alternate linear;
+}
+
+
+a {
+color: #489c79;
+}
+
+/* 
+problem - you never know exactly how big your elements are; difficult to work with.
+get more complex when start using %.
+solution
+:)
+setting default width of an element to include the padding and border
+box-sizing - 
+border-box - 
+
+/*
+.navigation__logo {
+position: relative;
+top: 20px;
+left: 20px;
+}
+*/
+/*
+.article {
+display: block;
+}
+
+.article_graphic--inline {
+display: inline-block;
+}
+*/
+/*Format: block_element--modifier- BEM naming convention- maintains consistnecy across all web pages
+button_sescondary--disabled means code has disabled secondary button*/
+/*
+/*(selector){ 
+Declaration
+[background-colo:][lightgray]
+property            value 
+}
+
+
+
+
+Colors used
+
+background: #F0F0EE
+Text Color (Dark Gray): #0F0F0E;
+Primary Color (Purple): #357b70;
+Secondary Color (Orange): #e0b354;
+font-weight: bold;
+font-style: italic;
+font-variant: small-caps;
+text-decoration; underline; 
+
+
+
+*/
