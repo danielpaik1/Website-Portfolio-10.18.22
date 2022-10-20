@@ -12,7 +12,7 @@
   --h-font-size: 18px;
 }
 
-body { font-family; 'Inconsolata', sans-serif;
+body { font-family: 'Inconsolata', sans-serif;
         font-weight: var(--h-font-weight);
         font-size: var(--h-font-size);
         line-height: 1.0;
@@ -119,7 +119,7 @@ div {
 
 .new-york-img {
   width: 0 auto;
-  height: 500px;
+  height: 300px;
   float:inline-start;
   margin-right: 40px;
   
