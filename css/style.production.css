@@ -102,7 +102,14 @@ border: 0px solid #000000; /*attributes describe: thiness, type, color */
 /* spacing to top and bottom and auto-spacing to left and right, which cneters the container horizontally */
 margin: 0 auto;
 }
-
+.work__text {
+  max-width: 700px;
+  margin: 0 auto;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 100px;
+  flex: 1 1 100px;
+  text-align: center;
+}
 .profile__portrait {
 float: left;
 margin-right: 40px;
